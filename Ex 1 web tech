@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<HTML>
+
+<head>
+    <style>
+        p.text {
+            font-weight: bold;
+            font-size: 20px;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        
+        #right {
+            float: right;
+        }
+        
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 50%;
+        }
+        
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+    </style>
+    <title>Resume</title>
+</head>
+
+<body>
+
+    <h1>My Resume Page</h1>
+    <div id="right">
+        <img src="C:\Users\MANIKANTAN\Desktop\my photos\sandhia photo.jpg" width='200' height='200'>
+    </div>
+    <p class="text">M.Sandhia
+        <br>16 A
+        <br>thiagarajar colony
+        <br>pasumalai madurai 4
+        <br>Ph: 98272452390
+        <br>Email: sandhiam2003@gmail.com
+    </p>
+    <a href="https://www.linkedin.com/in/m-sandhia-a02636209/">Visit My Website</a>
+    <a href="https://online.karunya.edu/oauth/login">My College</a>
+    <a href="https://mail.google.com/mail/u/0/#inbox">Email Me</a>
+    <a href="https://www.linkedin.com/in/m-sandhia-a02636209/">Call Me</a>
+    <img src="C:\Users\MANIKANTAN\Downloads\mail photo.png" width='100' height='50'>
+    <img src="C:\Users\MANIKANTAN\Downloads\linkedin.png" width='100' height='50'>
+    <img src="C:\Users\MANIKANTAN\Downloads\facebook.jpg" width='100' height='50'>
+    <h3>Career Objective</h3>
+    <p>A Career Objective or a Resume Objective Is essential a haeding statement that describes your professional goals in two or three sentenses. Employers looking to hire an employee for a position tend to seek candidates that are driven enough to understsnd
+        what they want.</p>
+
+    <h3>Academic Profile</h3>
+    <table>
+        <tr>
+            <th> </th>
+            <th>School/College</th>
+            <th>Borad/University</th>
+            <th>Percentage of Marks</th>
+            <th>year of Passing</th>
+        </tr>
+        <tr>
+            <td>Btech</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>HSC</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>SSLC</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <h3>Technical Skills</h3>
+    <ol>
+        <li>Data Structures</li>
+        <li>Computer Networks</li>
+        <li>web Technology</li>
+        <li>Python Programming</li>
+        <li>Java Programming</li>
+        <li>Design and data analysis</li>
+        <li>Operating system</li>
+    </ol>
+    <h3>Advanced Technology Skills</h3>
+    <ul>
+        <li>Data science</li>
+        <li>Data Analytics</li>
+        <li>Artificial intelligence</li>
+    </ul>
+    <h3>Internship Completed</h3>
+    <h4>Stduio Desino</h4>
+    <p>
+        <ul>
+            <li>The main objective of the study was to develop website with HTML,CSS,JAVA SCRIPT,NODE.JS and API DESIGN.</li>
+            <li>Most modern web applications expose APIs that clients can use to interact with the application. A well-designed web API should aim to support.</li>
+            <li>Platform independence. Any client should be able to call the API, regardless of how the API is implemented internally. This requires using standard protocols, and having a mechanism whereby the client and the web service can agree on the format
+                of the data to exchange.</li>
+            <li>Service evolution. The web API should be able to evolve and add functionality independently from client applications. As the API evolves, existing client applications should continue to function without modification. All functionality should
+                be discoverable so that client applications can fully use it.</li>
+        </ul>
+    </p>
+    <h3>PHOTO GALLERY</h3>
+    <img src="C:\Users\MANIKANTAN\Downloads\internship1.PNG" width='600' height='500'>
+    <img src="C:\Users\MANIKANTAN\Downloads\Certificate.jpg" width='600' height='500'>
+    <br><a href="https://www.linkedin.com/in/m-sandhia-a02636209/">Career Objective</a> |
+    <a href="https://www.linkedin.com/in/m-sandhia-a02636209/">Technical Skills</a> |
+    <a href="https://www.linkedin.com/in/m-sandhia-a02636209/">Education</a> |
+    <a href="https://www.linkedin.com/in/m-sandhia-a02636209/">Advanced Technology Skills</a> |
+    <a href="https://www.linkedin.com/in/m-sandhia-a02636209/">Internship</a>
+</body>
+
+</HTML>
