@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h1{
+            text-align: center;
+        }
+        input[type="text"] { 
+            width:150px; 
+            margin:5px 0px; 
+        } 
+        label { 
+            display: table-cell; 
+            margin:5px; 
+            text-align: left; 
+        } 
+        #submit2{
+            text-align: center;
+        }
+        #class{
+            text-decoration: none;
+        }
+        form  { display: table;     }
+        p     { display: table-row;  }
+        input { display: table-cell; }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <h1><img align='center' src="data:image/jpeg;base64,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" width='100' height='100'><b>STUDIO DESINO</b></h1>
+        <hr>
+        <table>
+            <tr>
+                <td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a id='class' href="file:///C:/Users/Praveena/Downloads/Web%20page%201.html">Link 1</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <b>|</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </td>
+                <td>
+                    <a href="file:///C:/Users/Praveena/Downloads/Web%20page%202.html">Link2</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <b>|</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </td>
+                <td>
+                    <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">Link3</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </td>
+                <td>
+                    <input type="search" placeholder="Search">  
+                </td>
+            </tr>
+        </table>
+        <hr>
+        <table>
+            <tr>
+                <td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <iframe width="420" height="315"
+src="https://www.youtube.com/embed/tgbNymZ7vqY">
+</iframe>
+                    </td>
+                    <td>
+                        <p>
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The controls attribute adds video controls, like play, pause, and 
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;volume.It is a good idea to always include width and height
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;attributes.If height and width are not set, the page might 
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;flicker while the video loads.The source element allows you 
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to specify alternative video files which the browser may choose 
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;from. The browser will use the first recognized format.The text 
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;between the video and video tags will only be displayed 
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;in browsers that do not support the video element.
+                        </p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <audio controls>
+                            <source src="" type="audio/">
+                        </audio>
+                        </td>
+            </tr>
+        </table>
+    <hr>
+    <table>
+        <tr>
+            <td>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <form action=“one.htmlp">
+                    <fieldset style="width:150% ;">
+                    <legend align="centre">Sign up</legend>
+                    <p>
+                    <label>User Name:</label>
+                    <input placeholder="Username" type="text" name="User Name" ><br><br>
+                    </p>
+                    <p>
+                    <label>Password:</label>   
+                    <input placeholder="Password" type="password" name="Password"><br><br>
+                    </p>
+                    <p>
+                        <button type="button">Register</button>
+                    </p>
+                    </fieldset>
+                </form>
+                </td>
+            <td>
+               <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact Us</b>
+               <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adress line 1
+               <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adress line 2
+               <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adress line 3
+               <br><label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email:<a href="https//www.linkedin.com/in/jeba-malar-p-bbb402209/">xyz@gmail.com</a></label>
+               <br><label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phone No:<a href="https//www.linkedin.com/in/jeba-malar-p-bbb402209/">1234567890</a></label>
+            </td>
+            <td>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125323.47388556498!2d76.89719435430861!3d11.011701573390447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba859af2f971cb5%3A0x2fc1c81e183ed282!2sCoimbatore%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1659279116835!5m2!1sen!2sin" width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </td>
+        </tr>
+    </table>
+    <body>
+    </fieldset>
+    <p align="center">page 1</p>
+        <fieldset>
+            <h3>Submit Your Resume</h3>
+            <form action="" method="post">
+                <fieldset style="width: 70%;">
+                    <legend>Personal Details</legend>
+                    <p>
+                    <label>*First Name :</label>
+                    <input type="text" placeholder="Enter your first name"><br><br>
+                    </p>
+                    <p>
+                    <label>*Middle Name :</label>
+                    <input type="text" placeholder="Enter your middle name"><br><br>
+                    </p>
+                    <p>
+                    <label>*Last Name :</label>
+                    <input type="text" placeholder="Enter your last name"><br><br>
+                    </p>
+                    <p>
+                    <label>Date of Birth :</label>
+                    <input type="date"><br><br>
+                    </p>
+                    <p>
+                    <label>Age in years :</label>
+                    <input type="number"><br><br>
+                    </p>
+                    <p>
+                    <label>Gender :</label>
+                    <input style="accent-color: #E9E4D4 " type="radio" id="html" name="fav_language" value="HTML">FEMALE
+                    <input style="accent-color: #E9E4D4 " type="radio" id="css" name="fav_language" value="CSS">MALE
+                    </p>
+
+                </fieldset>
+                <input style="accent-color: #E9E4D4 " type="range" min="0" max="100" value="20">
+                <fieldset>
+                    <legend>Address Details</legend>
+                    <p>
+                    <label>Address: </label>
+                    <input type="textarea"><br><br>
+                    </p>
+                    <p>
+                    <label>City/Town :</label>
+                    <input type="text"><br><br>
+                    </p>
+                    <p>
+                    <label> State:</label>
+                    <input type="text"><br><br>
+                    </p>
+                    <p>
+                    <label>Zip code:</label>
+                    <input type="number" placeholder="only 6 numbers"><br><br>
+                    </p>
+
+                </fieldset>
+                <input style="accent-color: #E9E4D4 " type="range" min="0" max="100" value="40">
+
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <p>
+                    <label>Telephone number: </label>
+                    <input type="number" placeholder="(044)999-999"><br><br>
+                    </p>
+                    <p>
+                    <label>*Mobile :</label>
+                    <input type="number" placeholder="(+91)99999-99999"><br><br>
+                    </p>
+                    <p>
+                    <label>*Email: </label>
+                    <input type="email" placeholder="valid email"><br><br>
+                    </p>
+                    <p>
+                    <label>Website:</label>
+                    <input type="url" placeholder="website url"><br><br>
+                    </p>
+
+                </fieldset>
+                <input style="accent-color: #E9E4D4 " type="range" min="0" max="100" value="60">
+                <fieldset>
+                    <legend>Education Details</legend>
+                    <table border="1" style="border-collapse:collapse;">
+                        <tr>
+                            <th>Qualification</th>
+                            <th>Board/University</th>
+                            <th>country</th>
+                            <th>Starting year</th>
+                            <th>Ending year</th>
+                            <th>Percentage</th>
+                        </tr>
+                        <tr>
+                            
+                            <td><input style="accent-color: #E9E4D4 " type="checkbox"><label>10th</label></td>
+                            <td><input type="text" placeholder="Board/university"></td>
+                            <td><select name="choose">
+                                <option>Choose</option>
+                                <option>India</option>
+                                <option>USA</option>
+                                <option>LONDON</option>
+
+                        </select></td>
+                        <td><input type="date"></td>
+                        <td><input type="date"></td>
+                        <td><input type="number"></td>
+                        </tr>
+
+                        <tr>
+                            
+                            <td><input style="accent-color: #E9E4D4 " type="checkbox"><label>12th</label></td>
+                            <td><input type="text" placeholder="Board/university"></td>
+                            <td><select name="choose">
+                                <option>Choose</option>
+                                <option>India</option>
+                                <option>USA</option>
+                                <option>LONDON</option>
+
+                        </select></td>
+                        <td><input type="date"></td>
+                        <td><input type="date"></td>
+                        <td><input type="number"></td>
+                        </tr>
+
+                        <tr>
+                            
+                            <td><input style="accent-color: #E9E4D4 " type="checkbox"><label>B.tech</label></td>
+                            <td><input type="text" placeholder="Board/university"></td>
+                            <td><select name="choose">
+                                <option>Choose</option>
+                                <option>India</option>
+                                <option>USA</option>
+                                <option>LONDON</option>
+
+                        </select></td>
+                        <td><input type="date"></td>
+                        <td><input type="date"></td>
+                        <td><input type="number"></td>
+                        </tr>
+                        <tr>
+                            
+                            <td><input style="accent-color: #E9E4D4 " type="checkbox"><label>Mtech</label></td>
+                            <td><input type="text" placeholder="Board/university"></td>
+                            <td><select name="choose">
+                                <option>Choose</option>
+                                <option>India</option>
+                                <option>USA</option>
+                                <option>LONDON</option>
+
+                        </select></td>
+                        <td><input type="date"></td>
+                        <td><input type="date"></td>
+                        <td><input type="number" placeholder="70%"></td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <input style="accent-color: #E9E4D4 " type="range" min="0" max="100" value="80">
+                <fieldset>
+                    <p>
+                    <label>Attach your resume in .doc or .pdf format&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input type="file" placeholder="choose File"><br><br>
+                    </p>
+                    <p>
+                    <input style="accent-color: #E9E4D4 " type="checkbox">I filled all the details
+                    </p>
+                </fieldset>
+                <p>
+                <input style="accent-color: #E9E4D4 " type="range" min="0" max="100" value="100"><br><br>
+                <button type="button">Submit</button>
+                </p>
+            </form>
+        </fieldset>
+        <p align="center">page 2</p>
+    </body>
+
+</body>
+</html>
